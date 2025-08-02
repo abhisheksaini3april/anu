@@ -247,7 +247,7 @@
           alert("Please enter a message before sending! 💬");
           return;
         }
-        const encodedMessage = encodeURIComponent("Hi Abhishek, Anu wrote: " + message);
+        const encodedMessage = encodeURIComponent(message);
         const whatsappURL = `https://wa.me/917060876247?text=${encodedMessage}`;
 
         const link = document.createElement("a");
